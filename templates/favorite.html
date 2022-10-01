@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <div class="header">
+        <h1>What's your favorite TV Show?</h1>
+    </div>
+    <div class = "center">
+        <form action="/similar" method="post">
+            <input autocomplete="off" autofocus name="tvshow" placeholder="Type your favorite show" type="text">
+            <input type="submit" value="GET A SHOW">
+        </form>
+    </div>
+{% endblock %}

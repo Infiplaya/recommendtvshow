@@ -1,0 +1,49 @@
+body {
+    background-color: #1c1c1d;
+    color: aliceblue;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.header{
+    text-align: center;
+    font-size: x-large;
+}
+
+.show{
+    text-align: center;
+    color: rgb(164, 244, 104);
+    font-size: xx-large;
+}
+
+.failure{
+    text-align: center;
+    color: rgb(239, 88, 88);
+}
+
+form{
+    text-align: center;
+}
+
+input{
+    font-size: x-large;
+    background-color: brown;
+    padding: 13px;
+    margin: 13px;
+    margin-bottom: 40px;
+    color: aliceblue;
+    border: none;
+    width: 250px;
+}
+
+select{
+    font-size: x-large;
+    padding: 13px;
+    margin: 13px;
+}
+
+input[name="tvshow"]{
+    width:auto;
+    background-color: aliceblue;
+    color: #1c1c1d;
+}

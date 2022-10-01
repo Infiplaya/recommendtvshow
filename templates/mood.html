@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <div class="header">
+        <h1>What's your mood right now? </h1>
+    </div>
+    <div class="center">
+        <form action="/nostalgic" method="post">
+            <input type="submit" name="nostalgic" value="Nostalgic">
+        </form>
+        <form action="/laugh" method="post">
+            <input type="submit" name="laugh" value="Want to laugh">
+        </form> 
+        <form action="/thrilled" method="post">
+            <input type="submit" name="thrilled" value="Want to be thrilled">
+        </form>
+        <form action="/learn" method="post">
+            <input type="submit" name="learn" value="Want to learn">
+        </form>
+    </div>
+
+
+{% endblock %}
