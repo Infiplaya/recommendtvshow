@@ -1,5 +1,8 @@
-## TV Show recommendations
+# TV Show recommendations
+## Video Demo
+https://www.youtube.com/watch?v=ui6r6xXybMo
 
+## Description
 This application draws the title of the series you can watch, depending on how you want to draw the series. There are 3 options: genre, mood or your favorite series. Thanks to the flask framework, I was able to make it a web app, as I thought it might be a cool challenge for me.
 For my database of shows I've created a csv file called "tvshows.csv" that has three columns (except index): title, genre and mood.
 Then in my project.py file I've opened that file with csv library and created three lists based on that csv file. I've stored SHOWS(which is a list of dictionaries containing show title, show genre and show mood), GENRES (list of genres), and NAMES containing show titles. Next I've created flask app, and app routes with the corresponding function. The mood, laugh, thrilled, learn functions select from the SHOWS list those series whose mood matches the mood we selected, and then add their names to a new list. From this list I draw one name, which is displayed in according template. Function called show genre first checks if we selected a genre, if not it returns a template "failure.html", if yes it appends to new list called show_genre the name of the show but only if this show genre is the one we selected. Then it returns in template "showgenre.html" the name of the random (thanks to random library) show selected. Function called similar let's you type your favorite show, if this show is in our database, it gives you recommendation based on you show mood or genre.
